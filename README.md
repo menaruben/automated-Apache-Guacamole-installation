@@ -14,9 +14,9 @@ After running the [installation script](./src/guacamole.sh) you can open the gua
 - user: guacadmin
 - pass: guacadmin
 
-You can change the username/password or add other users on the ```http://localhost:8080/guacamole/#/settings/users``` page. I would highly recommend adding another user and removing the guacadmin user for better security. 
+You can change the username/password or add other users on the ```http://localhost:8080/guacamole/#/settings/users``` page. I would highly recommend adding another user and removing the guacadmin user for better security.
 
-## History of commands:
+## installation script
 ```bash:
 hname="guac"
 SQLpasswd="guacpass"
