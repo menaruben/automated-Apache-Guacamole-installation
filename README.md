@@ -1,7 +1,6 @@
-# Dokumentation Guacamole Server
-<a href="https://www.byteprotips.com/post/apache-guacamole-1-1-0-install-guide">Doku</a>
+# Documentation Guacamole Server
+I have updated, automated and followed the instructions of this [documentation](https://www.byteprotips.com/post/apache-guacamole-1-1-0-install-guide)
 ## Default password guacamole
-
 user: guacadmin
 pass: guacadmin
 
