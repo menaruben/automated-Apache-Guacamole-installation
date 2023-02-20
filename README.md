@@ -9,7 +9,7 @@ guacversion="1.5.0"
 connectorversion="8.0.32"
 ```
 
-## Default Credentials
+## apache guacamole default credentials
 After running the [installation script](./src/guacamole.sh) you can open the guacamole server on your web browser with ```localhost:8080/guacamole```. If you are using the [vagrant vm](./src/Vagrantfile) then you'll need to open ```localhost:8081/guacamole```. The default credentials for guacamole are:
 - user: guacadmin
 - pass: guacadmin
