@@ -1,5 +1,5 @@
 #  automated-Apache-Guacamole-installation
-This is an automated installation of apache guacamole 1.5.0 (on Centos). I have updated, automated and followed the instructions of this [documentation](https://www.byteprotips.com/post/apache-guacamole-1-1-0-install-guide). I have added a vagrant vm inside the [src](./src/) folder for testing purposes.
+This is an automated installation of apache guacamole 1.5.0 (on Centos). I have added a vagrant vm inside the [src](./src/) folder for testing purposes.
 
 # Documentation
 ## annotation
