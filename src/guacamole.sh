@@ -5,10 +5,7 @@ connectorversion="8.0.32"
 
 cd ~
 # SET HOSTNAME
-# read -p "Please enter the hostname you would want your machine to have: " hname
 hostnamectl set-hostname $hname
-
-# read -p "Please enter the sql password: " SQLpasswd
 
 # GET DEPENDENCIES
 yum install -y epel-release

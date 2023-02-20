@@ -25,10 +25,7 @@ connectorversion="8.0.32"
 
 cd ~
 # SET HOSTNAME
-# read -p "Please enter the hostname you would want your machine to have: " hname
 hostnamectl set-hostname $hname
-
-# read -p "Please enter the sql password: " SQLpasswd
 
 # GET DEPENDENCIES
 yum install -y epel-release
@@ -41,6 +38,7 @@ yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusi
 yum install -y cairo-devel libjpeg-turbo-devel libwebsockets-devel libpng-devel uuid-devel ffmpeg-devel freerdp-devel pango-devel libssh2-devel libvncserver-devel pulseaudio-libs-devel openssl-devel libvorbis-devel libwebp-devel libtool libtelnet-devel freerdp mariadb-server wget tomcat
 
 # download and extract the Guacamole server source code (.tar.gz) and download the Guacamole Web Application (.war)
+
 wget https://downloads.apache.org/guacamole/$guacversion/source/guacamole-server-$guacversion.tar.gz
 tar -xzf guacamole-server-$guacversion.tar.gz
 wget https://downloads.apache.org/guacamole/$guacversion/binary/guacamole-$guacversion.war
