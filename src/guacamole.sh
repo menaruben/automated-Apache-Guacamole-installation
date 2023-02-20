@@ -1,5 +1,5 @@
 hname="guac"
-SQLpasswd="test123"
+SQLpasswd="guacpass"
 guacversion="1.5.0"
 connectorversion="8.0.32"
 
@@ -61,10 +61,10 @@ mysql -e "DROP USER ''@'$(hostname)'"
 mysql -e "DROP DATABASE test"
 mysql -e "FLUSH PRIVILEGES"
 
-mysql -u root -p$SQLpasswd guacdb
-mysql -e "CREATE DATABASE IF NOT EXISTS guacdb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci"
-mysql -e "GRANT SELECT,INSERT,UPDATE,DELETE ON guacdb.* TO 'guacuser'@'localhost' IDENTIFIED BY 'guacpass' WITH GRANT OPTION"
-mysql -e "FLUSH PRIVILEGES"
+# create database
+mysql -u root -p$SQLpasswd -e "CREATE DATABASE IF NOT EXISTS guacdb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci"
+mysql -u root -p$SQLpasswd -e "GRANT SELECT,INSERT,UPDATE,DELETE ON guacdb.* TO 'guacuser'@'localhost' IDENTIFIED BY 'guacpass' WITH GRANT OPTION"
+mysql -u root -p$SQLpasswd -e "FLUSH PRIVILEGES"
 
 # download and extract the guacamole client and cat .sql files to mysql from inside the jbdc folder
 wget https://downloads.apache.org/guacamole/$guacversion/source/guacamole-client-$guacversion.tar.gz
